@@ -86,11 +86,16 @@ public class SkipList<T> where T : class, ITreeNode
             if (isEnd == false)
             {
                 count += model.Count;
-                if (count > start)
+                if (count >= start)
                 {
                     isEnd = true;
                     index = start - (count - model.Count);
+                    //index = count - start;
                     var currentData = model.InOrderTraversalDesc();
+                    if (index == 0)
+                    {
+                        index = 1;
+                    }
                     dto = currentData.Skip(index - 1).Take(endIndex).ToList();
                     if (dto.Count == endIndex)
                     {
@@ -155,6 +160,11 @@ public class SkipList<T> where T : class, ITreeNode
         int start = index - high;
         int end = index + low;
         var dto = Charts(start, end);
+        index = start;
+        if (index <= 0)
+        {
+            index = 1;
+        }
         return dto;
     }
     /// <summary>

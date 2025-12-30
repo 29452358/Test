@@ -11,6 +11,21 @@ internal class Program
         //GetCustomerById();
         //await GetCustomerCharts();
         await TaskGetCustomerChartsById();
+        var dtos = CustomerRepository.GetCustomerCharts(900, 999);
+        foreach (var item in dtos)
+        {
+            Console.WriteLine(item.CustomerID + "-" + item.Score + "-" + item.Rank);
+        }
+        var dtoss = CustomerRepository.GetCustomerCharts(898, 918);
+        foreach (var item in dtoss)
+        {
+            Console.WriteLine(item.CustomerID + "-" + item.Score + "-" + item.Rank);
+        }
+        var dto = CustomerRepository.GetCustomerChartsById(92, 10, 10);
+        foreach (var item in dto)
+        {
+            Console.WriteLine(item.CustomerID + "-" + item.Score + "-" + item.Rank);
+        }
         //
         Console.ReadLine();
     }
@@ -23,50 +38,6 @@ internal class Program
             Score = score,
             Rank = rank
         };
-    }
-    /// <summary>
-    /// 测试树
-    /// </summary>
-    private static void TestTree()
-    {
-        //
-        AVLTree<Customer> avlTree = new AVLTree<Customer>();
-        avlTree.Insert(AddCustomer(15514665, 124, 1));
-        avlTree.Insert(AddCustomer(81546541, 113, 2));
-        avlTree.Insert(AddCustomer(1745431, 100, 3));
-        avlTree.Insert(AddCustomer(76786448, 100, 4));
-        avlTree.Insert(AddCustomer(254814111, 96, 5));
-        avlTree.Insert(AddCustomer(53274324, 95, 6));
-        avlTree.Insert(AddCustomer(6144320, 93, 7));
-        avlTree.Insert(AddCustomer(8009471, 93, 8));
-        avlTree.Insert(AddCustomer(38819, 92, 10));
-        avlTree.Insert(AddCustomer(38818, 92, 10));
-        avlTree.Insert(AddCustomer(81546542, 113, 2));
-        // 中序遍历（有序输出）
-        Console.WriteLine("In-order traversal:");
-        foreach (var item in avlTree.InOrderTraversal())
-        {
-            Console.Write(item.CustomerID + " ");
-        }
-        // 查找最小值
-        Console.WriteLine($"\nMin value: {avlTree.FindMin().CustomerID}");
-        // 查找最大值
-        Console.WriteLine($"Max value: {avlTree.FindMax().CustomerID}");
-        // 检查平衡
-        Console.WriteLine($"Is balanced: {avlTree.IsBalanced()}");
-        // 获取高度
-        Console.WriteLine($"Tree height: {avlTree.GetHeight()}");
-        //avlTrees.Delete(AddCustomer(38816, 92, 10));
-        //avlTrees.Delete(AddCustomer(15514665, 124, 2));
-        //avlTrees.Delete(AddCustomer(8009471, 93, 2));
-        foreach (var item in avlTree.InOrderTraversalDesc())
-        {
-            Console.Write(item.Score + " ");
-        }
-        //查询范围
-        FindRangeQuery(avlTree);
-        //范围
-        //RangeQuery(avlTree);
     }
     /// <summary>
     /// 范围
@@ -142,25 +113,25 @@ internal class Program
         DateTime t1 = DateTime.Now;
         var task1 = Task.Run(() =>
         {
-            for (int i = 1; i < 10000; i++)
+            for (int i = 1; i < 1000; i++)
             {
-                CustomerRepository.UpdateScore(AddCustomer(10000 + i, i, i));
+                CustomerRepository.UpdateScore(AddCustomer(i, i, i));
             }
         });
-        var task2 = Task.Run(() =>
-        {
-            for (int i = 10000; i < 20000; i++)
-            {
-                CustomerRepository.UpdateScore(AddCustomer(20000 + i, i, i));
-            }
-        });
-        var task3 = Task.Run(() =>
-        {
-            for (int i = 20000; i < 30000; i++)
-            {
-                CustomerRepository.UpdateScore(AddCustomer(30000 + i, i, i));
-            }
-        });
+        //var task2 = Task.Run(() =>
+        //{
+        //    for (int i = 10000; i < 20000; i++)
+        //    {
+        //        CustomerRepository.UpdateScore(AddCustomer(20000 + i, i, i));
+        //    }
+        //});
+        //var task3 = Task.Run(() =>
+        //{
+        //    for (int i = 20000; i < 30000; i++)
+        //    {
+        //        CustomerRepository.UpdateScore(AddCustomer(30000 + i, i, i));
+        //    }
+        //});
         await Task.WhenAll(task1);
         DateTime t2 = DateTime.Now;
         Console.WriteLine($"Max value: {t2 - t1}");
