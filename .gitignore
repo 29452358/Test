@@ -15,3 +15,13 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+*.dll
+*.pdb
+/Test/TreeApp/obj/Debug/net8.0/TreeApp.dll
+/Test/TreeApp/obj/Debug/net8.0/TreeApp.pdb
+/Test/TreeApp/obj/Debug/net8.0/ref/TreeApp.dll
+/Test/TreeApp/obj/Debug/net8.0/refint/TreeApp.dll
+/Src/Mtc.Host.Service/obj/Debug/net8.0/Mtc.Host.Service.dll
+/Src/Mtc.Host.Service/obj/Debug/net8.0/Mtc.Host.Service.pdb
+/Src/Mtc.Host.Service/obj/Debug/net8.0/ref/Mtc.Host.Service.dll
+/Src/Mtc.Host.Service/obj/Debug/net8.0/refint/Mtc.Host.Service.dll
