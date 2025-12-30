@@ -32,32 +32,6 @@
   },
   {
     "ContainingType": "Mtc.Host.WebApi.Controllers.CustomerController",
-    "Method": "GetCustomer",
-    "RelativePath": "api/Customer/GetCustomer/{customerid}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "customerid",
-        "Type": "System.Int64",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Mtc.Framwork.FramworkBase.Utility.WebApiResultModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Mtc.Host.WebApi.Controllers.CustomerController",
     "Method": "GetCustomerRank",
     "RelativePath": "api/Customer/Rank",
     "HttpMethod": "GET",

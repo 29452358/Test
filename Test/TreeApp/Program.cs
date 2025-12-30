@@ -11,17 +11,17 @@ internal class Program
         //GetCustomerById();
         //await GetCustomerCharts();
         await TaskGetCustomerChartsById();
-        var dtos = CustomerRepository.GetCustomerCharts(900, 999);
+        var dtos = CustomerRepository.GetCustomerRank(900, 999);
         foreach (var item in dtos)
         {
             Console.WriteLine(item.CustomerID + "-" + item.Score + "-" + item.Rank);
         }
-        var dtoss = CustomerRepository.GetCustomerCharts(898, 918);
+        var dtoss = CustomerRepository.GetCustomerRank(898, 918);
         foreach (var item in dtoss)
         {
             Console.WriteLine(item.CustomerID + "-" + item.Score + "-" + item.Rank);
         }
-        var dto = CustomerRepository.GetCustomerChartsById(92, 10, 10);
+        var dto = CustomerRepository.GetCustomerRankById(92, 10, 10);
         foreach (var item in dto)
         {
             Console.WriteLine(item.CustomerID + "-" + item.Score + "-" + item.Rank);
@@ -156,7 +156,7 @@ internal class Program
             {
                 for (int i = 0; i < 10000; i++)
                 {
-                    var dto = CustomerRepository.GetCustomerCharts(10, 20);
+                    var dto = CustomerRepository.GetCustomerRank(10, 20);
                 }
             });
             tasks.Add(task1);
@@ -175,7 +175,7 @@ internal class Program
             {
                 for (int i = 0; i < 10000; i++)
                 {
-                    var dto = CustomerRepository.GetCustomerChartsById(10050, 10, 10);
+                    var dto = CustomerRepository.GetCustomerRankById(10050, 10, 10);
                 }
             });
             tasks.Add(task1);

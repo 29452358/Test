@@ -71,15 +71,6 @@ public class CustomerService : ICustomerService
         }).ToList());
     }
     /// <summary>
-    /// 查询
-    /// </summary>
-    /// <param name="vm"></param>
-    /// <returns></returns>
-    public WebApiResultModel GetCustomerById(Int64 customerid)
-    {
-        return WebApiResult.Success(CustomerRepository.GetCustomerById(customerid));
-    }
-    /// <summary>
     /// 验证
     /// </summary>
     /// <param name="vm"></param>

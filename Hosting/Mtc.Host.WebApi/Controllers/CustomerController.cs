@@ -19,15 +19,6 @@ public class CustomerController : ControllerBase
         _customer = customer;
     }
     /// <summary>
-    /// 查询 测试
-    /// </summary>
-    /// <returns></returns>
-    [HttpGet("GetCustomer/{customerid}")]
-    public async Task<WebApiResultModel> GetCustomer(Int64 customerid)
-    {
-        return _customer.GetCustomerById(customerid);
-    }
-    /// <summary>
     /// 3.1更新分数
     /// </summary>
     [HttpPost("{customerid}/score/{score}")]

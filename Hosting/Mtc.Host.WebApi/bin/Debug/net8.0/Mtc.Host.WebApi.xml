@@ -9,12 +9,6 @@
             客户
             </summary>
         </member>
-        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomer(System.Int64)">
-            <summary>
-            查询 测试
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.UpdateScore(System.Int64,System.Int32)">
             <summary>
             3.1更新分数
