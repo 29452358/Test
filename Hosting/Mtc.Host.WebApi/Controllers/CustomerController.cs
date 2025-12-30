@@ -42,18 +42,18 @@ public class CustomerController : ControllerBase
     /// 3.2按排名获取客户
     /// </summary>
     /// <returns></returns>
-    [HttpGet("Charts")]
-    public async Task<WebApiResultModel> GetCustomerCharts(int start, int end)
+    [HttpGet("Rank")]
+    public async Task<WebApiResultModel> GetCustomerRank(int start, int end)
     {
-        return _customer.GetCustomerCharts(start, end);
+        return _customer.GetCustomerRank(start, end);
     }
     /// <summary>
     /// 3.2按排名获取客户
     /// </summary>
     /// <returns></returns>
-    [HttpGet("Charts/{customerid}")]
-    public async Task<WebApiResultModel> GetCustomerChartsById(Int64 customerid, int high, int low)
+    [HttpGet("Rank/{customerid}")]
+    public async Task<WebApiResultModel> GetCustomerRankById(Int64 customerid, int high, int low)
     {
-        return _customer.GetCustomerChartsById(customerid, high, low);
+        return _customer.GetCustomerRankById(customerid, high, low);
     }
 }

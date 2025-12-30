@@ -45,9 +45,9 @@ public class CustomerService : ICustomerService
     /// <param name="start"></param>
     /// <param name="end"></param>
     /// <returns></returns>
-    public WebApiResultModel GetCustomerCharts(int start, int end)
+    public WebApiResultModel GetCustomerRank(int start, int end)
     {
-        return WebApiResult.Success(CustomerRepository.GetCustomerCharts(start, end).Select(t => new CustomerDto()
+        return WebApiResult.Success(CustomerRepository.GetCustomerRank(start, end).Select(t => new CustomerDto()
         {
             CustomerID = t.CustomerID,
             Score = t.Score,
@@ -61,9 +61,9 @@ public class CustomerService : ICustomerService
     /// <param name="high"></param>
     /// <param name="low"></param>
     /// <returns></returns>
-    public WebApiResultModel GetCustomerChartsById(Int64 customerid, int high, int low)
+    public WebApiResultModel GetCustomerRankById(Int64 customerid, int high, int low)
     {
-        return WebApiResult.Success(CustomerRepository.GetCustomerChartsById(customerid, high, low).Select(t => new CustomerDto()
+        return WebApiResult.Success(CustomerRepository.GetCustomerRankById(customerid, high, low).Select(t => new CustomerDto()
         {
             CustomerID = t.CustomerID,
             Score = t.Score,

@@ -20,13 +20,13 @@
             3.1更新分数
             </summary>
         </member>
-        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomerCharts(System.Int32,System.Int32)">
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomerRank(System.Int32,System.Int32)">
             <summary>
             3.2按排名获取客户
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomerChartsById(System.Int64,System.Int32,System.Int32)">
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomerRankById(System.Int64,System.Int32,System.Int32)">
             <summary>
             3.2按排名获取客户
             </summary>

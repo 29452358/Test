@@ -84,7 +84,7 @@ public class CustomerRepository
     /// <summary>
     /// 3.2 获取客户
     /// </summary>
-    public static List<Customer> GetCustomerCharts(int start, int end)
+    public static List<Customer> GetCustomerRank(int start, int end)
     {
         try
         {
@@ -92,7 +92,7 @@ public class CustomerRepository
             //游标
             int index = start;
             //拷贝
-            var dto = avlTree.Charts(start, end).Select(t => new Customer(t)).ToList();
+            var dto = avlTree.Rank(start, end).Select(t => new Customer(t)).ToList();
             //返回 Rank 赋值
             foreach (var customer in dto)
             {
@@ -109,7 +109,7 @@ public class CustomerRepository
     /// <summary>
     /// 3.3通过CustomerId获得客户
     /// </summary>
-    public static List<Customer> GetCustomerChartsById(Int64 customerid, int high, int low)
+    public static List<Customer> GetCustomerRankById(Int64 customerid, int high, int low)
     {
         try
         {
@@ -120,7 +120,7 @@ public class CustomerRepository
             if (customers.TryGetValue(customerid, out var value))
             {
                 //拷贝
-                var dto = avlTree.ChartsById(value, high, low, out index).Select(t => new Customer(t)).ToList();
+                var dto = avlTree.RankById(value, high, low, out index).Select(t => new Customer(t)).ToList();
                 //返回 Rank 赋值
                 foreach (var customer in dto)
                 {

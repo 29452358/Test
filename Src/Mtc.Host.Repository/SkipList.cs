@@ -67,7 +67,7 @@ public class SkipList<T> where T : class, ITreeNode
     /// <param name="start"></param>
     /// <param name="end"></param>
     /// <returns></returns>
-    public List<T> Charts(int start, int end)
+    public List<T> Rank(int start, int end)
     {
         //总数
         int count = 0;
@@ -82,21 +82,24 @@ public class SkipList<T> where T : class, ITreeNode
         var keyDesc = skipList.Keys.OrderDescending();
         foreach (var key in keyDesc)
         {
+            //最后一个开始计算
             var model = skipList[key];
             if (isEnd == false)
             {
+                //调表累加
                 count += model.Count;
+                //计算到结果
                 if (count >= start)
                 {
+                    //结束标识
                     isEnd = true;
+                    //计算下标
                     index = start - (count - model.Count);
-                    //index = count - start;
+                    //中序遍历Desc
                     var currentData = model.InOrderTraversalDesc();
-                    if (index == 0)
-                    {
-                        index = 1;
-                    }
+                    //计算返回结果
                     dto = currentData.Skip(index - 1).Take(endIndex).ToList();
+                    //满足条件
                     if (dto.Count == endIndex)
                     {
                         return dto;
@@ -105,9 +108,13 @@ public class SkipList<T> where T : class, ITreeNode
             }
             else
             {
+                //不满足条件
                 var currentData = model.InOrderTraversalDesc();
+                //追加
                 dto.AddRange(currentData);
+                //计算返回结果
                 dto = dto.Skip(0).Take(endIndex).ToList();
+                //满足条件
                 if (dto.Count == endIndex)
                 {
                     return dto;
@@ -122,7 +129,7 @@ public class SkipList<T> where T : class, ITreeNode
     /// <param name="start"></param>
     /// <param name="end"></param>
     /// <returns></returns>
-    public List<T> ChartsById(T data, int high, int low, out int index)
+    public List<T> RankById(T data, int high, int low, out int index)
     {
         //倒序
         var keyDesc = skipList.Keys.OrderDescending();
@@ -132,15 +139,19 @@ public class SkipList<T> where T : class, ITreeNode
         var key = treeModel.Item2;
         //总数
         int count = 0;
+        //遍历key
         foreach (var keyd in keyDesc)
         {
+            //最后一个开始计算
             var model = skipList[keyd];
+            //条件达成
             if (key == keyd)
             {
                 break;
             }
             else
             {
+                //跳表累加计算Rank
                 count += model.Count;
             }
         }
@@ -155,11 +166,13 @@ public class SkipList<T> where T : class, ITreeNode
                 break;
             }
         }
+        //计算出Rank
         index = count + subscript;
-        //
+        //客服high 和 low
         int start = index - high;
         int end = index + low;
-        var dto = Charts(start, end);
+        //返回结果
+        var dto = Rank(start, end);
         index = start;
         if (index <= 0)
         {

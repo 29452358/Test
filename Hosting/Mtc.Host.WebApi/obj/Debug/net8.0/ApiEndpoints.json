@@ -32,8 +32,34 @@
   },
   {
     "ContainingType": "Mtc.Host.WebApi.Controllers.CustomerController",
-    "Method": "GetCustomerCharts",
-    "RelativePath": "api/Customer/Charts",
+    "Method": "GetCustomer",
+    "RelativePath": "api/Customer/GetCustomer/{customerid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerid",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Mtc.Framwork.FramworkBase.Utility.WebApiResultModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Mtc.Host.WebApi.Controllers.CustomerController",
+    "Method": "GetCustomerRank",
+    "RelativePath": "api/Customer/Rank",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -63,8 +89,8 @@
   },
   {
     "ContainingType": "Mtc.Host.WebApi.Controllers.CustomerController",
-    "Method": "GetCustomerChartsById",
-    "RelativePath": "api/Customer/Charts/{customerid}",
+    "Method": "GetCustomerRankById",
+    "RelativePath": "api/Customer/Rank/{customerid}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -83,32 +109,6 @@
         "Name": "low",
         "Type": "System.Int32",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Mtc.Framwork.FramworkBase.Utility.WebApiResultModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Mtc.Host.WebApi.Controllers.CustomerController",
-    "Method": "GetCustomer",
-    "RelativePath": "api/Customer/GetCustomer/{customerid}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "customerid",
-        "Type": "System.Int64",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": [

@@ -10,7 +10,7 @@ public interface ICustomerService
     //3.1更新分数
     WebApiResultModel UpdateScore(CustomerVm vm);
     //3.2按排名获取客户
-    WebApiResultModel GetCustomerCharts(int start, int end);
+    WebApiResultModel GetCustomerRank(int start, int end);
     //3.3Get通过CustomerId获得客户
-    WebApiResultModel GetCustomerChartsById(Int64 customerid, int high, int low);
+    WebApiResultModel GetCustomerRankById(Int64 customerid, int high, int low);
 }
