@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TreeApp/1.0.0": {
+        "dependencies": {
+          "Mtc.Host.Domain": "1.0.0",
+          "Mtc.Host.Repository": "1.0.0"
+        },
+        "runtime": {
+          "TreeApp.dll": {}
+        }
+      },
+      "Mtc.Host.Domain/1.0.0": {
+        "runtime": {
+          "Mtc.Host.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Mtc.Host.Repository/1.0.0": {
+        "dependencies": {
+          "Mtc.Host.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Mtc.Host.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TreeApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mtc.Host.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Mtc.Host.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

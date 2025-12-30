@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xg9vkVViaSk=",
+  "success": true,
+  "projectFilePath": "D:\\Dev\\Framwork\\Mtc.Framwork.FramworkBase\\Mtc.Framwork.FramworkBase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\6.0.6\\nlog.6.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,200 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "NLog/6.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Mtc.Framwork.FramworkBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "NLog": "6.0.6"
+        },
+        "compile": {
+          "bin/placeholder/Mtc.Framwork.FramworkBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mtc.Framwork.FramworkBase.dll": {}
+        }
+      },
+      "Mtc.Host.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Mtc.Host.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mtc.Host.Domain.dll": {}
+        }
+      },
+      "Mtc.Host.IService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Mtc.Framwork.FramworkBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mtc.Host.IService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mtc.Host.IService.dll": {}
+        }
+      },
+      "Mtc.Host.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Mtc.Host.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mtc.Host.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mtc.Host.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NLog/6.0.6": {
+      "sha512": "eUd/LDIwPtufj5OxtzFYiwuoKpzaS87iqO9P9D05avLCk4jIoOlqMwRH0o/43LmzM+CmgVAdDrCOq/rOK0sDKw==",
+      "type": "package",
+      "path": "nlog/6.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/netstandard2.1/NLog.dll",
+        "lib/netstandard2.1/NLog.xml",
+        "nlog.6.0.6.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "Mtc.Framwork.FramworkBase/1.0.0": {
+      "type": "project",
+      "path": "../../Framwork/Mtc.Framwork.FramworkBase/Mtc.Framwork.FramworkBase.csproj",
+      "msbuildProject": "../../Framwork/Mtc.Framwork.FramworkBase/Mtc.Framwork.FramworkBase.csproj"
+    },
+    "Mtc.Host.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Mtc.Host.Domain/Mtc.Host.Domain.csproj",
+      "msbuildProject": "../Mtc.Host.Domain/Mtc.Host.Domain.csproj"
+    },
+    "Mtc.Host.IService/1.0.0": {
+      "type": "project",
+      "path": "../Mtc.Host.IService/Mtc.Host.IService.csproj",
+      "msbuildProject": "../Mtc.Host.IService/Mtc.Host.IService.csproj"
+    },
+    "Mtc.Host.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Mtc.Host.Repository/Mtc.Host.Repository.csproj",
+      "msbuildProject": "../Mtc.Host.Repository/Mtc.Host.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Mtc.Framwork.FramworkBase >= 1.0.0",
+      "Mtc.Host.IService >= 1.0.0",
+      "Mtc.Host.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Dev\\Src\\Mtc.Host.Service\\Mtc.Host.Service.csproj",
+      "projectName": "Mtc.Host.Service",
+      "projectPath": "D:\\Dev\\Src\\Mtc.Host.Service\\Mtc.Host.Service.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\Src\\Mtc.Host.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Dev\\Framwork\\Mtc.Framwork.FramworkBase\\Mtc.Framwork.FramworkBase.csproj": {
+              "projectPath": "D:\\Dev\\Framwork\\Mtc.Framwork.FramworkBase\\Mtc.Framwork.FramworkBase.csproj"
+            },
+            "D:\\Dev\\Src\\Mtc.Host.IService\\Mtc.Host.IService.csproj": {
+              "projectPath": "D:\\Dev\\Src\\Mtc.Host.IService\\Mtc.Host.IService.csproj"
+            },
+            "D:\\Dev\\Src\\Mtc.Host.Repository\\Mtc.Host.Repository.csproj": {
+              "projectPath": "D:\\Dev\\Src\\Mtc.Host.Repository\\Mtc.Host.Repository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

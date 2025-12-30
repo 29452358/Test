@@ -1,0 +1,60 @@
+
+    #region 清空树
+    /// <summary>
+    /// 清空
+    /// </summary>
+    public void Clear()
+    {
+        //清空树
+        Clear(root);
+        //开始节点为空
+        root = null;
+    }
+    /// <summary>
+    /// 清空树
+    /// </summary>
+    /// <param name="node"></param>
+    private void Clear(AVLNode<T> node)
+    {
+        //节点不为空
+        if (node == null) return;
+        //递归左
+        Clear(node.Left);
+        //递归右
+        Clear(node.Right);
+        //左右节点设置为空
+        node.Left = null;
+        node.Right = null;
+    }
+    #endregion
+
+    #region 复制树
+    /// <summary>
+    /// 克隆
+    /// </summary>
+    /// <returns></returns>
+    public AVLTree<T> Clone()
+    {
+        //新对象
+        AVLTree<T> clone = new AVLTree<T>();
+        //克隆
+        CloneTree(root, clone);
+        return clone;
+    }
+    /// <summary>
+    /// 克隆树
+    /// </summary>
+    /// <param name="node"></param>
+    /// <param name="clone"></param>
+    private void CloneTree(AVLNode<T> node, AVLTree<T> clone)
+    {
+        //节点不为空
+        if (node == null) return;
+        //插入数据
+        clone.Insert(node.Data);
+        //左递归
+        CloneTree(node.Left, clone);
+        //右递归
+        CloneTree(node.Right, clone);
+    }
+    #endregion

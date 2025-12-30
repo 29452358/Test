@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mtc.Host.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Mtc.Host.WebApi.Controllers.CustomerController">
+            <summary>
+            客户
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomer(System.Int64)">
+            <summary>
+            查询 测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.UpdateScore(System.Int64,System.Int32)">
+            <summary>
+            3.1更新分数
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomerCharts(System.Int32,System.Int32)">
+            <summary>
+            3.2按排名获取客户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.GetCustomerChartsById(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            3.2按排名获取客户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mtc.Host.WebApi.TimeTask.JobTaskService">
+            <summary>
+            JobTask
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.WebApi.TimeTask.JobTaskService.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            JobTask
+            </summary>        
+        </member>
+    </members>
+</doc>

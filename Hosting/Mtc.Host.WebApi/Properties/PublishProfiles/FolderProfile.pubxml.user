@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Develop\WebApp\Hosting\Mtc.Host.WebApi\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2025-12-26T19:49:33.4757098Z||;True|2025-12-27T03:23:01.2068169+08:00||;True|2025-12-27T03:14:37.2719811+08:00||;True|2025-12-27T03:13:50.9437830+08:00||;True|2025-12-27T03:12:49.4948430+08:00||;True|2025-12-27T03:11:53.5505853+08:00||;True|2025-12-27T03:10:56.5672099+08:00||;True|2025-12-27T03:10:53.7156374+08:00||;True|2025-12-27T03:10:02.4433179+08:00||;True|2025-12-27T03:08:39.2827173+08:00||;True|2025-12-27T03:07:23.5557624+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,15 @@
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\bin\Release\net8.0\Mtc.Framwork.AppCore.deps.json
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\bin\Release\net8.0\Mtc.Framwork.AppCore.dll
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\bin\Release\net8.0\Mtc.Framwork.AppCore.pdb
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\bin\Release\net8.0\Mtc.Framwork.FramworkBase.dll
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\bin\Release\net8.0\Mtc.Framwork.FramworkBase.pdb
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.csproj.AssemblyReference.cache
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.AssemblyInfoInputs.cache
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.AssemblyInfo.cs
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.csproj.CoreCompileInputs.cache
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Fram.4D52C1D3.Up2Date
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.dll
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\refint\Mtc.Framwork.AppCore.dll
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\Mtc.Framwork.AppCore.pdb
+D:\Develop\WebApp\Framwork\Mtc.Framwork.AppCore\obj\Release\net8.0\ref\Mtc.Framwork.AppCore.dll
