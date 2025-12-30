@@ -22,3 +22,4 @@ D:\Dev\Framwork\Mtc.Framwork.FramworkBase\obj\Debug\net8.0\Mtc.Framwork.Framwork
 D:\Dev\Framwork\Mtc.Framwork.FramworkBase\obj\Debug\net8.0\refint\Mtc.Framwork.FramworkBase.dll
 D:\Dev\Framwork\Mtc.Framwork.FramworkBase\obj\Debug\net8.0\Mtc.Framwork.FramworkBase.pdb
 D:\Dev\Framwork\Mtc.Framwork.FramworkBase\obj\Debug\net8.0\ref\Mtc.Framwork.FramworkBase.dll
+D:\Dev\Framwork\Mtc.Framwork.FramworkBase\obj\Debug\net8.0\Mtc.Framwork.FramworkBase.sourcelink.json

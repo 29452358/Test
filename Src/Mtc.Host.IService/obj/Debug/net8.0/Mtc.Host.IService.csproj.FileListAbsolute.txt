@@ -28,3 +28,4 @@ D:\Dev\Src\Mtc.Host.IService\obj\Debug\net8.0\Mtc.Host.IService.dll
 D:\Dev\Src\Mtc.Host.IService\obj\Debug\net8.0\refint\Mtc.Host.IService.dll
 D:\Dev\Src\Mtc.Host.IService\obj\Debug\net8.0\Mtc.Host.IService.pdb
 D:\Dev\Src\Mtc.Host.IService\obj\Debug\net8.0\ref\Mtc.Host.IService.dll
+D:\Dev\Src\Mtc.Host.IService\obj\Debug\net8.0\Mtc.Host.IService.sourcelink.json

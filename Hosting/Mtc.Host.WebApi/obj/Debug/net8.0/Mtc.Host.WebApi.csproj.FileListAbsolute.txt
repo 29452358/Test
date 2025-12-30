@@ -126,3 +126,4 @@ D:\Dev\Hosting\Mtc.Host.WebApi\obj\Debug\net8.0\Mtc.Host.WebApi.xml
 D:\Dev\Hosting\Mtc.Host.WebApi\obj\Debug\net8.0\Mtc.Host.WebApi.pdb
 D:\Dev\Hosting\Mtc.Host.WebApi\obj\Debug\net8.0\Mtc.Host.WebApi.genruntimeconfig.cache
 D:\Dev\Hosting\Mtc.Host.WebApi\obj\Debug\net8.0\ref\Mtc.Host.WebApi.dll
+D:\Dev\Hosting\Mtc.Host.WebApi\obj\Debug\net8.0\Mtc.Host.WebApi.sourcelink.json

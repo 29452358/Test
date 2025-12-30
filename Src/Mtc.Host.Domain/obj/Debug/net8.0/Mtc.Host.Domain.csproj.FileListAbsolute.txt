@@ -20,3 +20,4 @@ D:\Dev\Src\Mtc.Host.Domain\obj\Debug\net8.0\Mtc.Host.Domain.dll
 D:\Dev\Src\Mtc.Host.Domain\obj\Debug\net8.0\refint\Mtc.Host.Domain.dll
 D:\Dev\Src\Mtc.Host.Domain\obj\Debug\net8.0\Mtc.Host.Domain.pdb
 D:\Dev\Src\Mtc.Host.Domain\obj\Debug\net8.0\ref\Mtc.Host.Domain.dll
+D:\Dev\Src\Mtc.Host.Domain\obj\Debug\net8.0\Mtc.Host.Domain.sourcelink.json

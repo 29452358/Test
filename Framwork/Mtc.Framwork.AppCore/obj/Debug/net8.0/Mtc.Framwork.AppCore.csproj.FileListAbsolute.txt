@@ -28,3 +28,4 @@ D:\Dev\Framwork\Mtc.Framwork.AppCore\obj\Debug\net8.0\Mtc.Framwork.AppCore.dll
 D:\Dev\Framwork\Mtc.Framwork.AppCore\obj\Debug\net8.0\refint\Mtc.Framwork.AppCore.dll
 D:\Dev\Framwork\Mtc.Framwork.AppCore\obj\Debug\net8.0\Mtc.Framwork.AppCore.pdb
 D:\Dev\Framwork\Mtc.Framwork.AppCore\obj\Debug\net8.0\ref\Mtc.Framwork.AppCore.dll
+D:\Dev\Framwork\Mtc.Framwork.AppCore\obj\Debug\net8.0\Mtc.Framwork.AppCore.sourcelink.json

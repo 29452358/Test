@@ -28,3 +28,4 @@ D:\Dev\Src\Mtc.Host.Repository\obj\Debug\net8.0\Mtc.Host.Repository.dll
 D:\Dev\Src\Mtc.Host.Repository\obj\Debug\net8.0\refint\Mtc.Host.Repository.dll
 D:\Dev\Src\Mtc.Host.Repository\obj\Debug\net8.0\Mtc.Host.Repository.pdb
 D:\Dev\Src\Mtc.Host.Repository\obj\Debug\net8.0\ref\Mtc.Host.Repository.dll
+D:\Dev\Src\Mtc.Host.Repository\obj\Debug\net8.0\Mtc.Host.Repository.sourcelink.json

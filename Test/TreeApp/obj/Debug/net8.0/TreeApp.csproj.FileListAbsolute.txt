@@ -38,3 +38,4 @@ D:\Dev\Test\TreeApp\obj\Debug\net8.0\refint\TreeApp.dll
 D:\Dev\Test\TreeApp\obj\Debug\net8.0\TreeApp.pdb
 D:\Dev\Test\TreeApp\obj\Debug\net8.0\TreeApp.genruntimeconfig.cache
 D:\Dev\Test\TreeApp\obj\Debug\net8.0\ref\TreeApp.dll
+D:\Dev\Test\TreeApp\obj\Debug\net8.0\TreeApp.sourcelink.json
