@@ -71,30 +71,7 @@ public class AVLTree<T> where T : class, ITreeNode
             }
         }
         return default(T);
-    }
-    public List<T> FindRangeQuery(T data, int high, int low)
-    {
-        if (IsEmpty)
-            throw new InvalidOperationException("Tree is empty");
-        List<AVLNode<T>> parent = new();
-        var node = Search(root, data, parent);
-        List<T> dto = new();
-        if (node != null)
-        {
-            for (int i = parent.Count - 1; i >= 0; i--)
-            {
-                dto.Clear();
-                dto.AddRange(InOrderTraversalDesc(parent[i]));
-                int highs = dto.Where(t => t.Id > data.Id).ToList().Count;
-                int lows = dto.Where(t => t.Id <= data.Id).ToList().Count;
-                if (highs >= high && lows >= low)
-                {
-                    return dto;
-                }
-            }
-        }
-        return dto;
-    }
+    }    
     /// <summary>
     /// 查询最小值
     /// </summary>

@@ -55,38 +55,6 @@ internal class Program
         Console.WriteLine("结束范围");
     }
     /// <summary>
-    /// 查询范围
-    /// </summary>
-    private static void FindRangeQuery(AVLTree<Customer> avlTree)
-    {
-        var list = avlTree.FindRangeQuery(AddCustomer(53274324, 95, 6), 3, 3);
-        int i = 0;
-        foreach (var item in list)
-        {
-            i++;
-            if (item.Id == 95)
-            {
-                break;
-            }
-        }
-        List<Customer> dto = new();
-        int high = i - 4;
-        int low = i + 3;
-        for (int j = high; j < low; j++)
-        {
-            if (j >= 0 && j < list.Count)
-            {
-                dto.Add(list[j]);
-            }
-        }
-        Console.WriteLine("\n开始范围");
-        foreach (var item in dto)
-        {
-            Console.WriteLine(item.Id);
-        }
-        Console.WriteLine("结束范围");
-    }
-    /// <summary>
     /// 调表
     /// </summary>
     private static void SkipList()
@@ -113,7 +81,7 @@ internal class Program
         DateTime t1 = DateTime.Now;
         var task1 = Task.Run(() =>
         {
-            for (int i = 1; i < 1000; i++)
+            for (int i = 1; i < 1000000; i++)
             {
                 CustomerRepository.UpdateScore(AddCustomer(i, i, i));
             }

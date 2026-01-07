@@ -25,7 +25,7 @@ public class SkipList<T> where T : class, ITreeNode
         //插入数据
         tree.Insert(data);
         //判断是否重新分配表
-        if (tree.Count > 200)
+        if (tree.Count > 6000)
         {
             DivideData(tree, key);
         }
@@ -71,7 +71,7 @@ public class SkipList<T> where T : class, ITreeNode
     {
         //总数
         int count = 0;
-        //游标
+        //下标
         int index = 1;
         int endIndex = end - start + 1;
         //结果
@@ -225,7 +225,7 @@ public class SkipList<T> where T : class, ITreeNode
         //重新分配
         foreach (var itemT in listT)
         {
-            if (i <= 100)
+            if (i <= 3000)
             {
                 treeA.Insert(itemT);
             }
