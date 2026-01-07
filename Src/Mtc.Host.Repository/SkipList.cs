@@ -79,7 +79,13 @@ public class SkipList<T> where T : class, ITreeNode
         //结束标识
         bool isEnd = false;
         //倒序
-        var keyDesc = skipList.Keys.OrderDescending();
+        //var keyDesc = skipList.Keys.OrderDescending();
+        var keyDesc = new List<int>();
+        var keys = skipList.Keys.ToList();
+        for (int i = keys.Count - 1; i >= 0; i--)
+        {
+            keyDesc.Add(keys[i]);
+        }
         foreach (var key in keyDesc)
         {
             //最后一个开始计算
@@ -132,7 +138,13 @@ public class SkipList<T> where T : class, ITreeNode
     public List<T> RankById(T data, int high, int low, out int index)
     {
         //倒序
-        var keyDesc = skipList.Keys.OrderDescending();
+        //var keyDesc = skipList.Keys.OrderDescending();
+        var keyDesc = new List<int>();
+        var keys = skipList.Keys.ToList();
+        for (int i = keys.Count - 1; i >= 0; i--)
+        {
+            keyDesc.Add(keys[i]);
+        }
         //获取Tree
         var treeModel = GetTree(data.Id);
         var tree = treeModel.Item1;
