@@ -44,25 +44,4 @@ public class CustomerController : ControllerBase
     {
         return _customer.GetCustomerRankById(customerid, high, low);
     }
-    /// <summary>
-    /// 验证
-    /// </summary>
-    /// <param name="vm"></param>
-    /// <returns></returns>
-    /// <exception cref="Exception"></exception>
-    private bool Validation(CustomerVm vm)
-    {
-        var validationContext = new ValidationContext(vm);
-        var validationResults = new List<ValidationResult>();
-        bool isValid = Validator.TryValidateObject(vm, validationContext, validationResults, true);
-        if (!isValid)
-        {
-            foreach (var error in validationResults)
-            {
-                // 处理错误
-                throw new Exception(error.ErrorMessage);
-            }
-        }
-        return isValid;
-    }
 }

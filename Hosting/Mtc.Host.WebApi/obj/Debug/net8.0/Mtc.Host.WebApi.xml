@@ -26,14 +26,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.Validation(Mtc.Host.WebApi.Framwork.Dto.CustomerVm)">
-            <summary>
-            验证
-            </summary>
-            <param name="vm"></param>
-            <returns></returns>
-            <exception cref="T:System.Exception"></exception>
-        </member>
         <member name="M:Mtc.Host.WebApi.Framwork.Configuration.SysConfig.GetAll">
             <summary>
             KeyALL
@@ -402,6 +394,12 @@
         <member name="M:Mtc.Host.WebApi.Framwork.Repository.SkipList`1.DivideData(Mtc.Host.WebApi.Framwork.Repository.AVLTree{`0},System.Int32)">
             <summary>
             分配 一张表 拆分两张表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.WebApi.Framwork.Repository.SkipList`1.Descending">
+            <summary>
+            倒序
             </summary>
             <returns></returns>
         </member>
