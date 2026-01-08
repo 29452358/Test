@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Src\Mtc.Host.Domain\Mtc.Host.Domain.csproj" />
-    <ProjectReference Include="..\..\Src\Mtc.Host.Repository\Mtc.Host.Repository.csproj" />
-  </ItemGroup>
-
 </Project>

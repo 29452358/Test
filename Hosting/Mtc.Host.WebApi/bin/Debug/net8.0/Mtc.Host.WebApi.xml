@@ -4,6 +4,97 @@
         <name>Mtc.Host.WebApi</name>
     </assembly>
     <members>
+        <member name="M:Mtc.Framwork.FramworkBase.Configuration.SysConfig.GetAll">
+            <summary>
+            KeyALL
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mtc.Framwork.FramworkBase.Configuration.WebConfig">
+            <summary>
+            配置中心
+            </summary>
+        </member>
+        <member name="M:Mtc.Framwork.FramworkBase.Configuration.WebConfig.GetSection(System.String)">
+            <summary>
+            Key:Value Key = Logging:LogLevel:Default
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Framwork.FramworkBase.Configuration.WebConfig.SetSection(System.String,System.String)">
+            <summary>
+            Logging:LogLevel:Default = "123";
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Framwork.FramworkBase.Configuration.WebConfig.DelSection(System.String)">
+            <summary>
+            Del Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Framwork.FramworkBase.Configuration.WebConfig.GetAll">
+            <summary>
+            KeyALL
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel.Code">
+            <summary>
+            0 成功 1 失败
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel.Data">
+            <summary>
+            Data
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel.SpecialMsg">
+            <summary>
+            特殊消息
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel.Count">
+            <summary>
+            总数
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel`1.Code">
+            <summary>
+            0 成功 1 失败
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel`1.Result">
+            <summary>
+            Data
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel`1.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel`1.SpecialMsg">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:Mtc.Framwork.FramworkBase.Utility.WebApiResultModel`1.Count">
+            <summary>
+            总数
+            </summary>
+        </member>
         <member name="T:Mtc.Host.WebApi.Controllers.CustomerController">
             <summary>
             客户
@@ -26,6 +117,14 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Mtc.Host.WebApi.Controllers.CustomerController.Validation(Mtc.Host.IService.Dto.CustomerVm)">
+            <summary>
+            验证
+            </summary>
+            <param name="vm"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
         <member name="T:Mtc.Host.WebApi.TimeTask.JobTaskService">
             <summary>
             JobTask
@@ -35,6 +134,368 @@
             <summary>
             JobTask
             </summary>        
+        </member>
+        <member name="P:Mtc.Host.IService.Dto.CustomerVm.CustomerID">
+            <summary>
+            客户Id
+            </summary>
+        </member>
+        <member name="P:Mtc.Host.IService.Dto.CustomerVm.Score">
+            <summary>
+            分数
+            </summary>
+        </member>
+        <member name="T:Mtc.Host.Repository.AVLNode`1">
+            <summary>
+            节点
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Mtc.Host.Repository.AVLNode`1.Data">
+            <summary>
+            实体
+            </summary>
+        </member>
+        <member name="P:Mtc.Host.Repository.AVLNode`1.Left">
+            <summary>
+            左
+            </summary>
+        </member>
+        <member name="P:Mtc.Host.Repository.AVLNode`1.Right">
+            <summary>
+            右
+            </summary>
+        </member>
+        <member name="P:Mtc.Host.Repository.AVLNode`1.Height">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="P:Mtc.Host.Repository.AVLNode`1.Repeat">
+            <summary>
+            重复
+            </summary>
+        </member>
+        <member name="T:Mtc.Host.Repository.AVLTree`1">
+            <summary>
+            平衡树
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:Mtc.Host.Repository.AVLTree`1.root">
+            <summary>
+            入口
+            </summary>
+        </member>
+        <member name="F:Mtc.Host.Repository.AVLTree`1.count">
+            <summary>
+            总数
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Insert(`0)">
+            <summary>
+            插入
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Delete(`0)">
+            <summary>
+            删除
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Contains(`0)">
+            <summary>
+            包含
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Find(`0)">
+            <summary>
+            查询
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.FindMin">
+            <summary>
+            查询最小值
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.FindMax">
+            <summary>
+            查询最大值
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.UpdateHeight(Mtc.Host.Repository.AVLNode{`0})">
+            <summary>
+            跟新高度
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.RotateRight(Mtc.Host.Repository.AVLNode{`0})">
+            <summary>
+            旋转操作右
+            </summary>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.RotateLeft(Mtc.Host.Repository.AVLNode{`0})">
+            <summary>
+            旋转操作左
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Insert(Mtc.Host.Repository.AVLNode{`0},`0,Mtc.Host.Repository.AVLNode{`0})">
+            <summary>
+            插入
+            </summary>
+            <param name="node"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Delete(Mtc.Host.Repository.AVLNode{`0},`0)">
+            <summary>
+            删除操作
+            </summary>
+            <param name="node"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.Search(Mtc.Host.Repository.AVLNode{`0},`0)">
+            <summary>
+            查找方法
+            </summary>
+            <param name="node"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.InOrderTraversal">
+            <summary>
+            中序遍历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.InOrderTraversalDesc">
+            <summary>
+            中序遍历Desc
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.InOrderTraversalDesc(Mtc.Host.Repository.AVLNode{`0})">
+            <summary>
+            中序遍历Desc
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.InOrderTraversal(Mtc.Host.Repository.AVLNode{`0},System.Collections.Generic.List{`0})">
+            <summary>
+            中序遍历
+            </summary>
+            <param name="node"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.InOrderTraversalDesc(Mtc.Host.Repository.AVLNode{`0},System.Collections.Generic.List{`0})">
+            <summary>
+            中序遍历
+            </summary>
+            <param name="node"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.PreOrderTraversal">
+            <summary>
+            前序遍历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.PreOrderTraversal(Mtc.Host.Repository.AVLNode{`0},System.Collections.Generic.List{`0})">
+            <summary>
+            前序遍历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.PostOrderTraversal">
+            <summary>
+            后序遍历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.PostOrderTraversal(Mtc.Host.Repository.AVLNode{`0},System.Collections.Generic.List{`0})">
+            <summary>
+            后序遍历
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.IsBalanced">
+            <summary>
+            不平衡
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.CheckBalance(Mtc.Host.Repository.AVLNode{`0})">
+            <summary>
+            平衡检验
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.GetHeight">
+            <summary>
+            查询高度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.RangeQuery(`0,`0)">
+            <summary>
+            查询范围
+            </summary>
+            <param name="lowerBound"></param>
+            <param name="upperBound"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.AVLTree`1.RangeQuery(Mtc.Host.Repository.AVLNode{`0},`0,`0,System.Collections.Generic.List{`0})">
+            <summary>
+            查询范围
+            </summary>
+            <param name="node"></param>
+            <param name="lowerBound"></param>
+            <param name="upperBound"></param>
+            <param name="result"></param>
+        </member>
+        <member name="T:Mtc.Host.Repository.CustomerRepository">
+            <summary>
+            存储
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.GetCustomerById(System.Int64)">
+            <summary>
+            获取客户由Id
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.GetCustomer(Mtc.Host.Domain.Customer)">
+            <summary>
+            获取客户
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.UpdateScore(Mtc.Host.Domain.Customer)">
+            <summary>
+            3.1 更新分数 客户已经存在，则更新其分数 不存在特定客户，则会将该客户添加到排行榜中并存储其分数
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.GetCustomerRank(System.Int32,System.Int32)">
+            <summary>
+            3.2 获取客户
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.GetCustomerRankById(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            3.3通过CustomerId获得客户
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.AddCustomer(Mtc.Host.Domain.Customer)">
+            <summary>
+            添加客户
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.EditCustomer(Mtc.Host.Domain.Customer,Mtc.Host.Domain.Customer)">
+            <summary>
+            修改客户
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.CustomerRepository.DeleteCustomer(Mtc.Host.Domain.Customer)">
+            <summary>
+            删除客服
+            </summary>
+        </member>
+        <member name="T:Mtc.Host.Repository.SkipList`1">
+            <summary>
+            跳表
+            </summary>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.Insert(`0)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.Delete(`0)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.Find(`0)">
+            <summary>
+            查询数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.Rank(System.Int32,System.Int32)">
+            <summary>
+            排名
+            </summary>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.RankById(`0,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            排名
+            </summary>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.GetTree(System.Int32)">
+            <summary>
+            获取tree
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Repository.SkipList`1.DivideData(Mtc.Host.Repository.AVLTree{`0},System.Int32)">
+            <summary>
+            分配 一张表 拆分两张表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Service.CustomerService.UpdateScore(Mtc.Host.IService.Dto.CustomerVm)">
+            <summary>
+            3.1更新分数
+            </summary>
+            <param name="vm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Service.CustomerService.GetCustomerRank(System.Int32,System.Int32)">
+            <summary>
+            3.2按排名获取客户
+            </summary>
+            <param name="start"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Service.CustomerService.GetCustomerRankById(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            3.3Get通过CustomerId获得客户
+            </summary>
+            <param name="customerid"></param>
+            <param name="high"></param>
+            <param name="low"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mtc.Host.Service.CustomerService.Validation(Mtc.Host.IService.Dto.CustomerVm)">
+            <summary>
+            验证
+            </summary>
+            <param name="vm"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
         </member>
     </members>
 </doc>

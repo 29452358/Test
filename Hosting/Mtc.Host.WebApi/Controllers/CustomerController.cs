@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Mtc.Framwork.FramworkBase.Utility;
 using Mtc.Host.IService;
 using Mtc.Host.IService.Dto;
+using Mtc.Host.Service;
+using System.ComponentModel.DataAnnotations;
 
 namespace Mtc.Host.WebApi.Controllers;
 /// <summary>
@@ -13,11 +15,7 @@ namespace Mtc.Host.WebApi.Controllers;
 [ApiExplorerSettings(GroupName = "v1")]
 public class CustomerController : ControllerBase
 {
-    ICustomerService _customer;
-    public CustomerController(ICustomerService customer)
-    {
-        _customer = customer;
-    }
+    CustomerService _customer = new();
     /// <summary>
     /// 3.1更新分数
     /// </summary>
@@ -46,5 +44,26 @@ public class CustomerController : ControllerBase
     public async Task<WebApiResultModel> GetCustomerRankById(Int64 customerid, int high, int low)
     {
         return _customer.GetCustomerRankById(customerid, high, low);
+    }
+    /// <summary>
+    /// 验证
+    /// </summary>
+    /// <param name="vm"></param>
+    /// <returns></returns>
+    /// <exception cref="Exception"></exception>
+    private bool Validation(CustomerVm vm)
+    {
+        var validationContext = new ValidationContext(vm);
+        var validationResults = new List<ValidationResult>();
+        bool isValid = Validator.TryValidateObject(vm, validationContext, validationResults, true);
+        if (!isValid)
+        {
+            foreach (var error in validationResults)
+            {
+                // 处理错误
+                throw new Exception(error.ErrorMessage);
+            }
+        }
+        return isValid;
     }
 }
