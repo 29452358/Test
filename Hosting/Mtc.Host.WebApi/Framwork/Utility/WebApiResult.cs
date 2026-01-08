@@ -1,4 +1,4 @@
-﻿namespace Mtc.Framwork.FramworkBase.Utility;
+﻿namespace Mtc.Host.WebApi.Framwork.Utility;
 public class WebApiResult
 {
     public static WebApiResultModel Success(object o, int count = 0, string msg = "ok", string specialMsg = "ok")

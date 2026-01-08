@@ -1,10 +1,9 @@
-﻿
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-namespace Mtc.Framwork.FramworkBase.Configuration;
+namespace Mtc.Host.WebApi.Framwork.Configuration;
 public class SysConfig
 {
     JsonDocument doc;

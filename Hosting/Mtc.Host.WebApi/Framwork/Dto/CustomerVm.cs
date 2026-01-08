@@ -1,14 +1,13 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Mtc.Host.IService.Dto;
+namespace Mtc.Host.WebApi.Framwork.Dto;
 public class CustomerVm
 {
     /// <summary>
     /// 客户Id
     /// </summary>
     [Required(ErrorMessage = "客户Id 不能为空")]
-    public Int64 CustomerID { get; set; }
+    public long CustomerID { get; set; }
     /// <summary>
     /// 分数
     /// </summary>

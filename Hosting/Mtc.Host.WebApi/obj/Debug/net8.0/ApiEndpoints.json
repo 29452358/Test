@@ -20,7 +20,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Mtc.Framwork.FramworkBase.Utility.WebApiResultModel",
+        "Type": "Mtc.Host.WebApi.Framwork.Utility.WebApiResultModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Mtc.Framwork.FramworkBase.Utility.WebApiResultModel",
+        "Type": "Mtc.Host.WebApi.Framwork.Utility.WebApiResultModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -87,7 +87,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Mtc.Framwork.FramworkBase.Utility.WebApiResultModel",
+        "Type": "Mtc.Host.WebApi.Framwork.Utility.WebApiResultModel",
         "MediaTypes": [
           "text/plain",
           "application/json",

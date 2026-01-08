@@ -1,5 +1,4 @@
-﻿
-namespace Mtc.Host.Domain;
+﻿namespace Mtc.Host.WebApi.Framwork.Domain;
 public class Customer : ITreeNode
 {
     public Customer()
@@ -14,7 +13,7 @@ public class Customer : ITreeNode
         Rank = model.Rank;
     }
     public int Id { get; set; }
-    public Int64 CustomerID { get; set; }
+    public long CustomerID { get; set; }
     public int Score { get; set; }
     public int Rank { get; set; }
 }

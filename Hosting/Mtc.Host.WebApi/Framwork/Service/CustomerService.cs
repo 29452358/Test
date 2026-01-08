@@ -1,11 +1,10 @@
-﻿
-using Mtc.Framwork.FramworkBase.Utility;
-using Mtc.Host.Domain;
-using Mtc.Host.IService.Dto;
-using Mtc.Host.Repository;
+﻿using Mtc.Host.WebApi.Framwork.Domain;
+using Mtc.Host.WebApi.Framwork.Dto;
+using Mtc.Host.WebApi.Framwork.Repository;
+using Mtc.Host.WebApi.Framwork.Utility;
 using System.ComponentModel.DataAnnotations;
 
-namespace Mtc.Host.Service;
+namespace Mtc.Host.WebApi.Framwork.Service;
 public class CustomerService
 {
     /// <summary>
@@ -60,7 +59,7 @@ public class CustomerService
     /// <param name="high"></param>
     /// <param name="low"></param>
     /// <returns></returns>
-    public WebApiResultModel GetCustomerRankById(Int64 customerid, int high, int low)
+    public WebApiResultModel GetCustomerRankById(long customerid, int high, int low)
     {
         return WebApiResult.Success(CustomerRepository.GetCustomerRankById(customerid, high, low).Select(t => new CustomerDto()
         {

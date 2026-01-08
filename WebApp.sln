@@ -12,11 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{02EA681E-C7D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{F14763C4-484D-4296-8DEE-540EBB33B70C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{69171A55-C1DC-434A-9CCD-EAC4FBE391EF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtc.Host.WebApi", "Hosting\Mtc.Host.WebApi\Mtc.Host.WebApi.csproj", "{546FB7A3-B119-49DA-86B1-5DD261A5B0C1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeApp", "Test\TreeApp\TreeApp.csproj", "{6EBC4A62-F7C6-4DB8-B19D-7CBAE12B0BB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,17 +24,12 @@ Global
 		{546FB7A3-B119-49DA-86B1-5DD261A5B0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{546FB7A3-B119-49DA-86B1-5DD261A5B0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{546FB7A3-B119-49DA-86B1-5DD261A5B0C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EBC4A62-F7C6-4DB8-B19D-7CBAE12B0BB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EBC4A62-F7C6-4DB8-B19D-7CBAE12B0BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EBC4A62-F7C6-4DB8-B19D-7CBAE12B0BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EBC4A62-F7C6-4DB8-B19D-7CBAE12B0BB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{546FB7A3-B119-49DA-86B1-5DD261A5B0C1} = {F14763C4-484D-4296-8DEE-540EBB33B70C}
-		{6EBC4A62-F7C6-4DB8-B19D-7CBAE12B0BB4} = {69171A55-C1DC-434A-9CCD-EAC4FBE391EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D977D76-98C1-459A-B0D8-4D4A9E63DF96}

@@ -1,4 +1,4 @@
-﻿namespace Mtc.Framwork.FramworkBase.Utility;
+﻿namespace Mtc.Host.WebApi.Framwork.Utility;
 public class WebApiResultModel
 {
     /// <summary>

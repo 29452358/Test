@@ -1,9 +1,8 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using Mtc.Framwork.FramworkBase.Utility;
-using Mtc.Host.IService;
-using Mtc.Host.IService.Dto;
-using Mtc.Host.Service;
+using Mtc.Host.WebApi.Framwork.Dto;
+using Mtc.Host.WebApi.Framwork.Service;
+using Mtc.Host.WebApi.Framwork.Utility;
 using System.ComponentModel.DataAnnotations;
 
 namespace Mtc.Host.WebApi.Controllers;

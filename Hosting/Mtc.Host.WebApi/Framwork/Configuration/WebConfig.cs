@@ -1,6 +1,4 @@
-﻿
-
-namespace Mtc.Framwork.FramworkBase.Configuration;
+﻿namespace Mtc.Host.WebApi.Framwork.Configuration;
 /// <summary>
 /// 配置中心
 /// </summary>

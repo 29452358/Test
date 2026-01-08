@@ -1,7 +1,6 @@
-﻿
-using Mtc.Host.Domain;
+﻿using Mtc.Host.WebApi.Framwork.Domain;
 
-namespace Mtc.Host.Repository;
+namespace Mtc.Host.WebApi.Framwork.Repository;
 /// <summary>
 /// 跳表
 /// </summary>

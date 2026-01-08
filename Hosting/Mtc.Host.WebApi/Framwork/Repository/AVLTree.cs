@@ -1,7 +1,6 @@
-﻿
-using Mtc.Host.Domain;
+﻿using Mtc.Host.WebApi.Framwork.Domain;
 
-namespace Mtc.Host.Repository;
+namespace Mtc.Host.WebApi.Framwork.Repository;
 /// <summary>
 /// 平衡树
 /// </summary>
@@ -70,7 +69,7 @@ public class AVLTree<T> where T : class, ITreeNode
                 return list.Repeat.Where(t => t.CustomerID == data.CustomerID).FirstOrDefault();
             }
         }
-        return default(T);
+        return default;
     }    
     /// <summary>
     /// 查询最小值

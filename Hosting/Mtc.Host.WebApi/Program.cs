@@ -1,7 +1,4 @@
 
-using Mtc.Host.IService;
-using Mtc.Host.Service;
-
 namespace Mtc.Host.WebApi;
 public class Program
 {

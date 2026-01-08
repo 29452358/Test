@@ -1,5 +1,4 @@
-﻿
-namespace Mtc.Host.Repository;
+﻿namespace Mtc.Host.WebApi.Framwork.Repository;
 /// <summary>
 /// 节点
 /// </summary>

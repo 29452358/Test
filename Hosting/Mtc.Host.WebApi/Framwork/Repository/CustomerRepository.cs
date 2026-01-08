@@ -1,7 +1,6 @@
-﻿
-using Mtc.Host.Domain;
+﻿using Mtc.Host.WebApi.Framwork.Domain;
 
-namespace Mtc.Host.Repository;
+namespace Mtc.Host.WebApi.Framwork.Repository;
 /// <summary>
 /// 存储
 /// </summary>
@@ -10,13 +9,13 @@ public class CustomerRepository
     //读写锁
     private static readonly ReaderWriterLockSlim _lock = new ReaderWriterLockSlim();
     //根据Id查询 值 
-    private static Dictionary<Int64, Customer> customers = new();
+    private static Dictionary<long, Customer> customers = new();
     //跳表
     private static SkipList<Customer> avlTree = new();
     /// <summary>
     /// 获取客户由Id
     /// </summary>
-    public static Customer GetCustomerById(Int64 customerID)
+    public static Customer GetCustomerById(long customerID)
     {
         try
         {
@@ -109,7 +108,7 @@ public class CustomerRepository
     /// <summary>
     /// 3.3通过CustomerId获得客户
     /// </summary>
-    public static List<Customer> GetCustomerRankById(Int64 customerid, int high, int low)
+    public static List<Customer> GetCustomerRankById(long customerid, int high, int low)
     {
         try
         {
